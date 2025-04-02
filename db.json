@@ -1,3 +1,28 @@
 {
-    "users": 
+  "users": [
+    {
+      "id": 1,
+      "fullname": "Phuc Vinh",
+      "gender": "male",
+      "age": 19
+    },
+    {
+      "id": 2,
+      "fullname": "Vinh Phuc",
+      "gender": "male",
+      "age": 10
+    },
+    {
+      "id": 3,
+      "fullname": "Vyn xi",
+      "gender": "male",
+      "age": 20
+    },
+    {
+      "id": 4,
+      "fullname": "Phuc Vinh NVPV",
+      "gender": "male hehehiih",
+      "age": 195
+    }
+  ]
 }
