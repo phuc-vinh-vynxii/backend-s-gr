@@ -32,7 +32,7 @@ router.get('/users/:id', (req, res) => {
 router.put('/users/:id', (req, res) => {
     const userId = parseInt(req.params.id);
     const updatedUser = req.body;
-
+    //ktra xem có truyền đủ thông tin để data hắn đồng bộ với nhau 
     fs.readFile(dbFilePath, 'utf8', (err, data) => {
         if (err) {
             return res.status(500).json({ message: 'Server error' });
@@ -55,7 +55,7 @@ router.put('/users/:id', (req, res) => {
 
 router.post('/users', (req, res) => {
     const newUser = req.body;
-
+    //ktra xem có truyền đủ thông tin để data hắn đồng bộ với nhau 
     fs.readFile(dbFilePath, 'utf8', (err, data) => {
         if (err) {
             return res.status(500).json({ message: 'Server error' });
