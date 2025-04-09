@@ -76,6 +76,7 @@ router.post('/users', validateUser, (req, res) => {
     })
 })
 
+
 router.delete('/users/:id', (req, res) => {
     const idToDelete = parseInt(req.params.id);
     fs.readFile(dbFilePath, 'utf8', (err, data) =>{
