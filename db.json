@@ -2,8 +2,8 @@
   "users": [
     {
       "id": 1,
-      "fullname": "Phuc Vinh",
-      "gender": "male",
+      "fullname": "haha",
+      "gender": "hihi",
       "age": 19
     },
     {
@@ -23,6 +23,19 @@
       "fullname": "Phuc Vinh NVPV",
       "gender": "male hehehiih",
       "age": 195
+    },
+    {
+      "id": 6,
+      "fullname": "PV",
+      "gender": "male"
+    },
+    {
+      "id": 7,
+      "email": "test@gmail.com",
+      "gender": "male",
+      "age": 18,
+      "fullName": "Nguyen Van Teo",
+      "phone": "09123456789"
     }
   ]
 }

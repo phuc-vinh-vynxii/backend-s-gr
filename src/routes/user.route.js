@@ -1,7 +1,8 @@
 import { Router } from 'express';
-import db from '../db.json' with { type: 'json' };
+import db from '../../db.json' with { type: 'json' };
 import fs from 'fs';
 import path from 'path';
+import validateUser from '../middlewares/validate.user.js';
 
 const router = Router();
 const dbFilePath = path.resolve('db.json');
@@ -53,7 +54,7 @@ router.put('/users/:id', (req, res) => {
     })
 })
 
-router.post('/users', (req, res) => {
+router.post('/users', validateUser, (req, res) => {
     const newUser = req.body;
     //ktra xem có truyền đủ thông tin để data hắn đồng bộ với nhau 
     fs.readFile(dbFilePath, 'utf8', (err, data) => {

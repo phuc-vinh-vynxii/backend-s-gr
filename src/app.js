@@ -1,16 +1,22 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import userRouter from './routes/user.route.js';
+
 dotenv.config();
 
 const PORT = process.env.PORT;
 
 const app = express();
+
+// Middleware to parse JSON bodies
 app.use(express.json());
+
+// Routes
+app.use(userRouter);
+
+// Start the server
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
-})
-// Middleware to parse JSON bodies
-app.use(userRouter);
+});
 
 
