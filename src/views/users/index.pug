@@ -1,0 +1,40 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='/css/style.css')
+.table-div
+  .table-head
+    h3 User Table
+    a.table-control(href='/users/create')
+      button.btn-add Create User
+  table.table-user
+    thead
+      tr
+        th ID
+        th Name
+        th Email
+        th Gender
+        th Age
+        th Phone
+        th Actions
+    tbody
+      each user in users
+        tr
+            td #{user.id}
+            td #{user.fullName} 
+            td #{user.email}
+            td #{user.gender}
+            td #{user.age}
+            td #{user.phone}
+            td
+              a(href=`/users/update/${user.id}`)
+                button.btn-edit Update
+              button.btn-delete(data-id = user.id) Delete
+  form( 
+    action=""
+    data-path = "/users/"
+    id = "delete-form"
+    method="POST"
+  )
+script(src = '/js/script.js')

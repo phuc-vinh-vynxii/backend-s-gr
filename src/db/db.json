@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": 3,
+      "email": "test323@gmail.com",
+      "gender": "female",
+      "age": 19,
+      "fullName": "Nguyen Van Teohha",
+      "phone": "09123456789"
+    },
+    {
+      "id": 4,
+      "email": "102230141@sv1.dut.udn.vn",
+      "gender": "male",
+      "age": 23,
+      "fullName": "sdadads dssadad",
+      "phone": "09994540057"
+    }
+  ]
+}

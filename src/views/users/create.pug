@@ -1,0 +1,39 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel="stylesheet", href="/css/style.css")
+  title #{title}
+.form-add
+  h2 Add User
+  form(action='/users' method='POST')
+    label(for='email') Email: 
+    br
+    input#email(type='email' name='email' required='')
+    br
+    br
+    span Chọn giới tính 
+    br
+    label(for='male') Male
+    input#male(type='radio' name='gender' required='' value = 'male')
+    br
+    label(for='female') Female
+    input#female(type='radio' name='gender' required='' value = 'female')
+    br
+    br
+    label(for='age') Age: 
+    br
+    input#age(type='number' name='age' required='')
+    br
+    br
+    label(for='name') Full Name: 
+    br
+    input#fname(type='text' name='fullName' required='')
+    br
+    br
+    label(for='phone') Phone: 
+    br
+    input#phone(type='tel' name='phone' required='')
+    br
+    br
+    input(type='submit')
